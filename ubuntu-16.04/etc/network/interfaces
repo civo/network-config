@@ -10,10 +10,10 @@ iface lo inet loopback
 # as interfaces may have been defined in /etc/network/interfaces.d
 # See LP: #1262951
 
-auto ens3
+allow-hotplug ens1
 iface ens3 inet dhcp
 
-auto ens4
+allow-hotplug ens4
 iface ens4 inet dhcp
 up ip route change default via 172.31.255.254
 
